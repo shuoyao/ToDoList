@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC05B6561D6A82F6006AF7A3 /* TDLList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B6551D6A82F6006AF7A3 /* TDLList.swift */; };
+		EC05B6581D6A83C2006AF7A3 /* TDLTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B6571D6A83C2006AF7A3 /* TDLTask.swift */; };
 		ECB8E9981D6A7351005CF26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8E9971D6A7351005CF26F /* AppDelegate.swift */; };
 		ECB8E99A1D6A7351005CF26F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8E9991D6A7351005CF26F /* ViewController.swift */; };
 		ECB8E99D1D6A7351005CF26F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB8E99B1D6A7351005CF26F /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC05B6551D6A82F6006AF7A3 /* TDLList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLList.swift; sourceTree = "<group>"; };
+		EC05B6571D6A83C2006AF7A3 /* TDLTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLTask.swift; sourceTree = "<group>"; };
 		ECB8E9941D6A7351005CF26F /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB8E9971D6A7351005CF26F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECB8E9991D6A7351005CF26F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC05B6541D6A82CE006AF7A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC05B6551D6A82F6006AF7A3 /* TDLList.swift */,
+				EC05B6571D6A83C2006AF7A3 /* TDLTask.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ECB8E98B1D6A7351005CF26F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 		ECB8E9961D6A7351005CF26F /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				EC05B6541D6A82CE006AF7A3 /* Models */,
 				ECB8E9971D6A7351005CF26F /* AppDelegate.swift */,
 				ECB8E9991D6A7351005CF26F /* ViewController.swift */,
 				ECB8E99B1D6A7351005CF26F /* Main.storyboard */,
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC05B6561D6A82F6006AF7A3 /* TDLList.swift in Sources */,
 				ECD2CDAC1D6A7AB100A68141 /* TDLListCellTableViewCell.swift in Sources */,
 				ECB8E99A1D6A7351005CF26F /* ViewController.swift in Sources */,
+				EC05B6581D6A83C2006AF7A3 /* TDLTask.swift in Sources */,
 				ECB8E9981D6A7351005CF26F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
