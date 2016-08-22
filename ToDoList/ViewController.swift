@@ -11,7 +11,13 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     let listCellReuseIdentifier = "TDLListCellReuseIdentifier"
-    let listNames = ["First List", "Second List", "Target List", "J.Crew List"]
+    lazy var listNames: [TDLList] = {
+        return [TDLList(withListName: "First List"),
+                TDLList(withListName: "Second List"),
+                TDLList(withListName: "Target List"),
+                TDLList(withListName: "J. Crew List")]
+    }()
+    
     @IBOutlet var tableview: UITableView?
     
     override func viewDidLoad() {
@@ -30,9 +36,35 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(listCellReuseIdentifier, forIndexPath: indexPath) as! TDLListCellTableViewCell
-        cell.listNameLabel?.text = self.listNames[indexPath.row]
+        let list = self.listNames[indexPath.row]
+        cell.listNameLabel?.text = list.listName
         return cell
     }
-
+    
+    @IBAction func displayListNameAlertView(sender: UIBarButtonItem) {
+        var inputTextfield: UITextField?
+        
+        let alertViewController = UIAlertController(title: "Please enter list name", message: nil, preferredStyle: .Alert)
+        alertViewController.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
+            textField.placeholder = "List Name"
+            inputTextfield = Optional(textField)
+        })
+        let okAction = UIAlertAction(title: "Create List", style: .Default, handler:({ (action) -> Void in
+            self.addListWithName(inputTextfield?.text)
+            self.tableview?.reloadData()
+        }))
+        
+        alertViewController.addAction(okAction)
+        self.presentViewController(alertViewController, animated: true, completion: nil)
+    }
+    
+    func addListWithName(listName: String?) {
+        if let unwrappedListName = listName {
+            let list = TDLList(withListName: unwrappedListName)
+            self.listNames.append(list)
+        }
+    }
+    
+    
 }
 
