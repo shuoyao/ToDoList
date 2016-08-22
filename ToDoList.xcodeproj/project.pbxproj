@@ -14,6 +14,7 @@
 		ECB8E9A21D6A7351005CF26F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB8E9A01D6A7351005CF26F /* LaunchScreen.storyboard */; };
 		ECB8E9AD1D6A7351005CF26F /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8E9AC1D6A7351005CF26F /* ToDoListTests.swift */; };
 		ECB8E9B81D6A7351005CF26F /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8E9B71D6A7351005CF26F /* ToDoListUITests.swift */; };
+		ECD2CDAC1D6A7AB100A68141 /* TDLListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2CDAB1D6A7AB100A68141 /* TDLListCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		ECB8E9B31D6A7351005CF26F /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB8E9B71D6A7351005CF26F /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		ECB8E9B91D6A7351005CF26F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD2CDAB1D6A7AB100A68141 /* TDLListCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLListCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				ECB8E9971D6A7351005CF26F /* AppDelegate.swift */,
 				ECB8E9991D6A7351005CF26F /* ViewController.swift */,
 				ECB8E99B1D6A7351005CF26F /* Main.storyboard */,
+				ECD2CDAB1D6A7AB100A68141 /* TDLListCellTableViewCell.swift */,
 				ECB8E99E1D6A7351005CF26F /* Assets.xcassets */,
 				ECB8E9A01D6A7351005CF26F /* LaunchScreen.storyboard */,
 				ECB8E9A31D6A7351005CF26F /* Info.plist */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD2CDAC1D6A7AB100A68141 /* TDLListCellTableViewCell.swift in Sources */,
 				ECB8E99A1D6A7351005CF26F /* ViewController.swift in Sources */,
 				ECB8E9981D6A7351005CF26F /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +486,7 @@
 				ECB8E9BE1D6A7351005CF26F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECB8E9BF1D6A7351005CF26F /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				ECB8E9C11D6A7351005CF26F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECB8E9C21D6A7351005CF26F /* Build configuration list for PBXNativeTarget "ToDoListUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				ECB8E9C41D6A7351005CF26F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
