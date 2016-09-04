@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TDLList: NSObject {
+public class TDLList: NSObject, NSCoding {
     let listName: String
     var tasks: [TDLTask]
     
@@ -23,6 +23,21 @@ class TDLList: NSObject {
     
     func addTask(task: TDLTask) {
         self.tasks.append(task)
+    }
+    
+    public func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(self.listName, forKey: "listName")
+        aCoder.encodeObject(self.tasks, forKey: "tasks")
+    }
+    
+    required convenience public init?(coder aDecoder: NSCoder) {
+        guard let listName = aDecoder.decodeObjectForKey("listName") as? String,
+              let tasks = aDecoder.decodeObjectForKey("tasks") as? [TDLTask] else {
+                return nil
+        }
+        
+        self.init(withListName: listName)
+        self.tasks = tasks
     }
     
 }

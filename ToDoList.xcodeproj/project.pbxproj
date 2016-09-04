@@ -11,6 +11,7 @@
 		53BEA2421D72A60B00DA5EA3 /* TDLTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEA2411D72A60B00DA5EA3 /* TDLTaskTableViewCell.swift */; };
 		EC05B6561D6A82F6006AF7A3 /* TDLList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B6551D6A82F6006AF7A3 /* TDLList.swift */; };
 		EC05B6581D6A83C2006AF7A3 /* TDLTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B6571D6A83C2006AF7A3 /* TDLTask.swift */; };
+		ECA513631D7CC1E900DE4F4B /* NSFileManager+ListUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA513621D7CC1E900DE4F4B /* NSFileManager+ListUtilities.swift */; };
 		ECB8E9981D6A7351005CF26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8E9971D6A7351005CF26F /* AppDelegate.swift */; };
 		ECB8E99A1D6A7351005CF26F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8E9991D6A7351005CF26F /* ViewController.swift */; };
 		ECB8E99D1D6A7351005CF26F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB8E99B1D6A7351005CF26F /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		53BEA2411D72A60B00DA5EA3 /* TDLTaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLTaskTableViewCell.swift; sourceTree = "<group>"; };
 		EC05B6551D6A82F6006AF7A3 /* TDLList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLList.swift; sourceTree = "<group>"; };
 		EC05B6571D6A83C2006AF7A3 /* TDLTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLTask.swift; sourceTree = "<group>"; };
+		ECA513621D7CC1E900DE4F4B /* NSFileManager+ListUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFileManager+ListUtilities.swift"; sourceTree = "<group>"; };
 		ECB8E9941D6A7351005CF26F /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB8E9971D6A7351005CF26F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECB8E9991D6A7351005CF26F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				EC05B6541D6A82CE006AF7A3 /* Models */,
 				ECB8E9971D6A7351005CF26F /* AppDelegate.swift */,
+				ECA513621D7CC1E900DE4F4B /* NSFileManager+ListUtilities.swift */,
 				ECB8E99B1D6A7351005CF26F /* Main.storyboard */,
 				ECD2CDAB1D6A7AB100A68141 /* TDLListCellTableViewCell.swift */,
 				53BEA2411D72A60B00DA5EA3 /* TDLTaskTableViewCell.swift */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC05B6561D6A82F6006AF7A3 /* TDLList.swift in Sources */,
+				ECA513631D7CC1E900DE4F4B /* NSFileManager+ListUtilities.swift in Sources */,
 				ECD2CDAC1D6A7AB100A68141 /* TDLListCellTableViewCell.swift in Sources */,
 				53BEA2401D72A13300DA5EA3 /* TDLTasksViewController.swift in Sources */,
 				53BEA2421D72A60B00DA5EA3 /* TDLTaskTableViewCell.swift in Sources */,
