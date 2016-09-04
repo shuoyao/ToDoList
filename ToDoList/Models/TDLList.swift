@@ -21,4 +21,8 @@ class TDLList: NSObject {
         return self.tasks.count
     }
     
+    func addTask(task: TDLTask) {
+        self.tasks.append(task)
+    }
+    
 }
