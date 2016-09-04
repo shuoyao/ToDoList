@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53BEA2401D72A13300DA5EA3 /* TDLTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEA23F1D72A13300DA5EA3 /* TDLTasksViewController.swift */; };
+		53BEA2421D72A60B00DA5EA3 /* TDLTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEA2411D72A60B00DA5EA3 /* TDLTaskTableViewCell.swift */; };
 		EC05B6561D6A82F6006AF7A3 /* TDLList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B6551D6A82F6006AF7A3 /* TDLList.swift */; };
 		EC05B6581D6A83C2006AF7A3 /* TDLTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B6571D6A83C2006AF7A3 /* TDLTask.swift */; };
 		ECB8E9981D6A7351005CF26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8E9971D6A7351005CF26F /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53BEA23F1D72A13300DA5EA3 /* TDLTasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLTasksViewController.swift; sourceTree = "<group>"; };
+		53BEA2411D72A60B00DA5EA3 /* TDLTaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLTaskTableViewCell.swift; sourceTree = "<group>"; };
 		EC05B6551D6A82F6006AF7A3 /* TDLList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLList.swift; sourceTree = "<group>"; };
 		EC05B6571D6A83C2006AF7A3 /* TDLTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDLTask.swift; sourceTree = "<group>"; };
 		ECB8E9941D6A7351005CF26F /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,9 +118,11 @@
 			children = (
 				EC05B6541D6A82CE006AF7A3 /* Models */,
 				ECB8E9971D6A7351005CF26F /* AppDelegate.swift */,
-				ECB8E9991D6A7351005CF26F /* ViewController.swift */,
 				ECB8E99B1D6A7351005CF26F /* Main.storyboard */,
 				ECD2CDAB1D6A7AB100A68141 /* TDLListCellTableViewCell.swift */,
+				53BEA2411D72A60B00DA5EA3 /* TDLTaskTableViewCell.swift */,
+				ECB8E9991D6A7351005CF26F /* ViewController.swift */,
+				53BEA23F1D72A13300DA5EA3 /* TDLTasksViewController.swift */,
 				ECB8E99E1D6A7351005CF26F /* Assets.xcassets */,
 				ECB8E9A01D6A7351005CF26F /* LaunchScreen.storyboard */,
 				ECB8E9A31D6A7351005CF26F /* Info.plist */,
@@ -275,6 +281,8 @@
 			files = (
 				EC05B6561D6A82F6006AF7A3 /* TDLList.swift in Sources */,
 				ECD2CDAC1D6A7AB100A68141 /* TDLListCellTableViewCell.swift in Sources */,
+				53BEA2401D72A13300DA5EA3 /* TDLTasksViewController.swift in Sources */,
+				53BEA2421D72A60B00DA5EA3 /* TDLTaskTableViewCell.swift in Sources */,
 				ECB8E99A1D6A7351005CF26F /* ViewController.swift in Sources */,
 				EC05B6581D6A83C2006AF7A3 /* TDLTask.swift in Sources */,
 				ECB8E9981D6A7351005CF26F /* AppDelegate.swift in Sources */,

@@ -41,6 +41,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let selectedList = self.listNames[indexPath.row]
+        self.performSegueWithIdentifier("ShowTasksViewController", sender: selectedList)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let segueIdentifier = segue.identifier {
+            if segueIdentifier == "ShowTasksViewController" {
+                if let viewController = segue.destinationViewController as? TDLTasksViewController {
+                    if let unwrappedSender = sender as? TDLList {
+                        viewController.list = unwrappedSender
+                    }
+                }
+            }
+        }
+    }
+    
     @IBAction func displayListNameAlertView(sender: UIBarButtonItem) {
         var inputTextfield: UITextField?
         
