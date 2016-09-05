@@ -12,16 +12,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     let listCellReuseIdentifier = "TDLListCellReuseIdentifier"
     lazy var listNames: [TDLList] = {
-        return [TDLList(withListName: "First List"),
+        if let savedLists = NSFileManager.defaultManager().tdl_savedLists() {
+            return savedLists
+        } else {
+            return [TDLList(withListName: "First List"),
                 TDLList(withListName: "Second List"),
                 TDLList(withListName: "Target List"),
                 TDLList(withListName: "J. Crew List")]
+        }
     }()
+    
     
     @IBOutlet var tableview: UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("handleApplicationWillTerminateNotification"), name: UIApplicationWillTerminateNotification, object: nil)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -82,6 +89,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    func handleApplicationWillTerminateNotification() {
+        NSFileManager.defaultManager().tdl_writeSave(self.listNames)
+    }
     
 }
 

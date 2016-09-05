@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TDLTask: NSObject {
+public class TDLTask: NSObject, NSCoding {
     let taskName: String
     let expirationDate: NSDate
     let taskNote: String
@@ -24,5 +24,28 @@ class TDLTask: NSObject {
     convenience init(withTaskName taskName:String, taskNote:String) {
         let expirationDate = NSDate.distantFuture()
         self.init(withTaskName: taskName, expirationDate: expirationDate, taskNote: taskNote)
+    }
+    
+    
+    public func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(self.taskName, forKey: "taskName")
+        aCoder.encodeObject(self.expirationDate, forKey: "expirationDate")
+        aCoder.encodeObject(self.taskNote, forKey: "taskNote")
+        aCoder.encodeObject(self.starred, forKey: "starred")
+        aCoder.encodeObject(self.completed, forKey: "completed")
+    }
+    
+    
+    required convenience public init?(coder aDecoder: NSCoder) {
+        guard let taskName = aDecoder.decodeObjectForKey("taskName") as? String,
+        let expirationDate = aDecoder.decodeObjectForKey("expirationDate") as? NSDate,
+        let taskNote = aDecoder.decodeObjectForKey("taskNote") as? String,
+        let starred = aDecoder.decodeObjectForKey("starred") as? Bool,
+            let completed = aDecoder.decodeObjectForKey("completed") as? Bool else {
+                return nil
+        }
+        self.init(withTaskName: taskName, expirationDate: expirationDate, taskNote: taskNote)
+        self.starred = starred
+        self.completed = completed
     }
 }
